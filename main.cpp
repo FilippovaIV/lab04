@@ -229,17 +229,17 @@ int main()
     }
     cout << '\n';
     cout << "Name address students[" << 1 << "] = " << (void*)(&students[1].name) << " Smesh: " << offsetof(Student,name) << " size: " << sizeof(students[1].name ) << '\n';
-    cout << "Year address students[" << 1 << "] = " << &students[1].year << " Smesh: " << offsetof(Student,year)<< " size: " << sizeof(students[1].year) << " 2: ";
+    cout << "Year address students[" << 1 << "] = " << &students[1].year << " Smesh: " << offsetof(Student,year)<< " size: " << sizeof(students[1].year) << " 16: ";
     print_in_hex(&students[1].year,sizeof(students[1].year));
-    cout << " 16: ";
+    cout << " 2: ";
     print_in_binary (&students[1].year,sizeof(students[1].year));
-    cout << "Average address students[" << 1 << "] = " << &students[1].average << " Smesh: " << offsetof(Student,average) << " size: " << sizeof(students[1].average) << " 2: ";
+    cout << "Average address students[" << 1 << "] = " << &students[1].average << " Smesh: " << offsetof(Student,average) << " size: " << sizeof(students[1].average) << " 16: ";
     print_in_hex(&students[1].average,sizeof(students[1].average));
-    cout << " 16: ";
+    cout << " 2: ";
     print_in_binary (&students[1].average,sizeof(students[1].average));
-    cout << "Courses address students[" << 1 << "] = " << &students[1].courses << " Smesh: " << offsetof(Student,average) << " size: " << sizeof(students[1].courses) << " 2: ";
+    cout << "Courses address students[" << 1 << "] = " << &students[1].courses << " Smesh: " << offsetof(Student,average) << " size: " << sizeof(students[1].courses) << " 16: ";
     print_in_hex(&students[1].courses,sizeof(students[1].courses));
-    cout << " 16: ";
+    cout << " 2: ";
     print_in_binary (&students[1].courses,sizeof(students[1].courses));
     cout << '\n';
     cout << "Massive students[" << 1 << "] in 16:" << '\n';
